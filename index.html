@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontAwesome/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav id="main-nav">
+
+            <div class="top-left-nav">
+                <i id="bar-icon"class="fa fa-bars" aria-hidden="true"></i>
+                <img id="yt-logo" src="data:image/png;base64,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" alt="youtube logo">
+            </div>
+
+            <div id="search-bar-container">
+                <form class="search-bar">
+                    <input id="search" type="text" placeholder="Search">
+                </form>
+
+                <div class="search-icon-container">
+                    <i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+            <div class="top-right-nav">
+                <i class="fas fa-video"></i>
+                <i class="fas fa-th"></i>
+                <i class="fas fa-bell"></i>
+                <i id="user-circle" class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+         <div id="main-container">
+            <div id="iframe-container">
+                <iframe id="main-iframe" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="video-informations">
+                <div class="statistics">
+                    <h3 id="video-name" class="video-info">Contributing to Open Source Part I: The Easy Way</h3>
+                    <p id="video-views" class="video-info bottom-statistics">57 984 views • 27. 2. 2014</p>
+                    <div class="like-share bottom-statistics video-info">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"> 426</i>
+                        <i class="fa fa-thumbs-down" aria-hidden="true"> 19</i>
+                        <i class="fa fa-share" aria-hidden="true"> share</i>
+                        <i class="fa fa-bars" aria-hidden="true"> save</i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="video-info video-info-wrapper">
+                    <div class="profile-info">
+                        <a href="#">
+                            <img id="TOP-logo" src="https://yt3.ggpht.com/a/AATXAJyfp0akR7PCq72FcsHL1DrLUbzqKet6_ZK6Nw=s100-c-k-c0xffffffff-no-rj-mo" alt=" the Odin project profile logo">
+                        </a>
+                        <div>The Odin project<br><em id="subscribers">999 Subscribers</em></div>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <p class="description">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open </p>
+                    <p class="show-more">show more</p>
+                </div>
+            </div>
+          </div>
+    </main>
+
+</body>
+</html>
