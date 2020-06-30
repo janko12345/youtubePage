@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-i, #yt-logo{
+i, img{
     cursor: pointer;
 }
+img:hover{
+    box-shadow: 0 0 0 3px lightblue;
+    transition: transform .25s;
+    transform: scale(1.15);
+}
+/*all header css*/
 #main-nav{
     display: flex;
     height: 70px;
@@ -66,13 +72,13 @@ i, #yt-logo{
 i{
     font-size: 20px;
 }
-#user-circle{
+#main-user-circle{
     font-size: 30px;
     margin-left: 10px;
 }
 
 
-
+/*all main css*/
 
 main{
     background-color: #eee5;
@@ -94,7 +100,6 @@ main{
 .statistics{
     position: relative;
     margin-bottom: 15px;
-    margin-top: 23px;
 }
 
 .video-info-wrapper{
@@ -144,7 +149,17 @@ button[type="submit"]{
     height: 50px;
     width: 100px;
     font-size: large;
+    border-radius: 5px;
 }
+button[type="submit"]:hover{
+    box-shadow: 0px 0px 0 2px inset #a00;
+    cursor: pointer;
+}
+button[type="submit"]:active{
+    transform: scale(.98);
+    box-shadow: 0px 0px 0 2px inset #a00;
+}
+
 .description, .show-more{
     clear: both;
     padding-top: 10px;
@@ -158,6 +173,63 @@ button[type="submit"]{
     margin-bottom: 20px;
 }
 .show-more:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*all footer css*/
+footer{
+    background-color: #eee5;
+}
+.comment-section{
+    margin-left: 250px;
+    width: 1000px;
+    padding-top: 20px;   
+}
+.comment-section i{
+    font-size: 15px;
+    white-space: pre;
+}
+#number-of-comments{
+    margin-right: 20px;
+}
+#my-logo{
+    margin-top: 15px;
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 15px;
+}
+#my-comment{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ded;
+    width: 950px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.comments i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+.user-comment-container{
+    display:flex;
+    margin-top: 25px;
+}
+.user-content-container{
+    display:flex;
+    flex-direction: column;
+}
+.user-comment-toolbar i{
+    margin-top: 7px;
+    font-size: 15px;
+}
+.reply{
+    color: blue;
+}
+.reply:hover{
     cursor: pointer;
     text-decoration: underline;
 }
