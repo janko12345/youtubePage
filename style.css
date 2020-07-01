@@ -6,17 +6,38 @@
 i, img{
     cursor: pointer;
 }
+#main-layout{
+    display:flex;
+}
+#primary{
+    margin-right: 20px;
+}
+.fa-thumbs-up:active{
+    color: blue;
+}
+.fa-thumbs-down:active{
+    color: red;
+}
 img:hover{
     box-shadow: 0 0 0 3px lightblue;
     transition: transform .25s;
     transform: scale(1.15);
 }
-/*all header css*/
+#main-layout{
+    background-color: #eee5;
+    margin-top: 70px;
+}
+/*all header css (nav bar)*/
 #main-nav{
     display: flex;
     height: 70px;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
 }
 .top-left-nav{
     display:flex;
@@ -78,11 +99,9 @@ i{
 }
 
 
-/*all main css*/
+/*all main css (main video, comments)*/
 
-main{
-    background-color: #eee5;
-}
+
 #main-container{
     margin-left: 250px;
     width: 1000px;
@@ -179,9 +198,7 @@ button[type="submit"]:active{
 
 
 /*all footer css*/
-footer{
-    background-color: #eee5;
-}
+
 .comment-section{
     margin-left: 250px;
     width: 1000px;
@@ -232,4 +249,31 @@ footer{
 .reply:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+/*all aside css (side videos)*/
+
+#side-vids{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 30px;
+    grid-gap: 1em;
+    width: 400px;
+}
+.auto-play::after{
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+.next-vid{
+    width: 200px;
+}
+
+.next-content-wrapper{
+    display: flex;
+    flex-direction: column;
 }
